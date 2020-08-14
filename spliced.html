@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;600&display=swap" rel="stylesheet">
+<style>
+.btn1{
+padding: 12px 24px;
+border: none;
+background-color: #008CBA;
+font-size: 22px;
+color: white;
+border-radius: 4px;
+cursor: pointer;
+font-family: 'Teko', sans-serif;
+
+}
+.btn1:hover{
+background-color: white;
+color: #008CBA;
+border: 2px solid #008CBA;
+}
+body{
+font-family: 'Teko', sans-serif;
+font-size:130%;
+}
+.container{
+border: 2px solid #008CBA;
+padding: 20px;
+margin-right: 240px;
+
+}
+.container:hover{
+background-color: #008080;
+border: none;
+color: white;
+border-radius: 50px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>JavaScript Array Methods</h2>
+
+<h2>splice()</h2>
+
+<p>The splice() method adds new elements to an array.</p>
+
+<button class="btn1" onclick= "myfunction()">Click!</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+games=["COD","PUBG","FORTNITE","FREE FIRE"];
+
+document.getElementById("demo1").innerHTML= "First Array <br>"+  games;
+games.splice(3,0,"IGI","ASPHALT");
+function myfunction(){
+
+document.getElementById("demo2").innerHTML= "Second Array <br>"+  games;
+}
+</script>
+</div>
+</body>
+</html>
